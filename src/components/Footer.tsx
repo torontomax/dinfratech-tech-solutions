@@ -105,7 +105,7 @@ const Footer = () => {
                 <MapPin className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="text-muted-foreground">Grande São Paulo</p>
-                  <p className="text-xs text-muted-foreground">Atendemos todo o estado</p>
+                  <p className="text-xs text-muted-foreground">Atendemos seu bairro e região</p>
                 </div>
               </div>
             </div>

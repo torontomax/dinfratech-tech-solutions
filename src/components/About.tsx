@@ -28,7 +28,7 @@ const About = () => {
     "Suporte técnico 24/7 disponível",
     "Certificações em principais tecnologias",
     "Parcerias com fabricantes líderes",
-    "Atendimento em todo estado"
+    "Atendimento local e regional"
   ];
 
   return (

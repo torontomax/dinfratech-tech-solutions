@@ -178,9 +178,9 @@ const Contact = () => {
               <MapPin className="w-8 h-8 text-primary mx-auto mb-4" />
               <h4 className="font-semibold text-foreground mb-2">Localização</h4>
               <p className="text-sm text-muted-foreground">
-                Atendemos todo o estado de São Paulo
+                Atendimento local no seu bairro
                 <br />
-                Sede: Grande São Paulo
+                e em toda Grande São Paulo
               </p>
             </CardContent>
           </Card>
