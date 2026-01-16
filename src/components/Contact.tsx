@@ -33,17 +33,21 @@ const Contact = () => {
             <Card className="bg-card/50 backdrop-blur-sm border-border/50 hover:shadow-card transition-all duration-300">
               <CardHeader>
                 <div className="w-12 h-12 bg-gradient-to-br from-primary to-neon-glow rounded-lg flex items-center justify-center mb-4">
-                  <Phone className="w-6 h-6 text-primary-foreground" />
+                  <MessageCircle className="w-6 h-6 text-primary-foreground" />
                 </div>
-                <CardTitle className="text-xl text-foreground">Telefone</CardTitle>
+                <CardTitle className="text-xl text-foreground">WhatsApp</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
                   Fale diretamente com nossa equipe de especialistas
                 </p>
-                <Button variant="outline" className="w-full">
-                  <Phone className="w-4 h-4 mr-2" />
-                  (11) 9 9999-9999
+                <Button 
+                  variant="outline" 
+                  className="w-full"
+                  onClick={() => window.open('https://wa.me/5581985290635', '_blank')}
+                >
+                  <MessageCircle className="w-4 h-4 mr-2" />
+                  (81) 98529-0635
                 </Button>
               </CardContent>
             </Card>
@@ -53,13 +57,17 @@ const Contact = () => {
                 <div className="w-12 h-12 bg-gradient-to-br from-primary to-neon-glow rounded-lg flex items-center justify-center mb-4">
                   <MessageCircle className="w-6 h-6 text-primary-foreground" />
                 </div>
-                <CardTitle className="text-xl text-foreground">WhatsApp</CardTitle>
+                <CardTitle className="text-xl text-foreground">WhatsApp Direto</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
                   Atendimento rápido e direto pelo WhatsApp
                 </p>
-                <Button variant="neon" className="w-full">
+                <Button 
+                  variant="neon" 
+                  className="w-full"
+                  onClick={() => window.open('https://wa.me/5581985290635', '_blank')}
+                >
                   <MessageCircle className="w-4 h-4 mr-2" />
                   Iniciar conversa
                 </Button>
@@ -77,9 +85,13 @@ const Contact = () => {
                 <p className="text-muted-foreground mb-4">
                   Envie sua mensagem detalhada
                 </p>
-                <Button variant="outline" className="w-full">
+                <Button 
+                  variant="outline" 
+                  className="w-full"
+                  onClick={() => window.open('mailto:diego.soares@dinfratech.com.br', '_blank')}
+                >
                   <Mail className="w-4 h-4 mr-2" />
-                  contato@dinfratech.com.br
+                  diego.soares@dinfratech.com.br
                 </Button>
               </CardContent>
             </Card>
@@ -178,9 +190,9 @@ const Contact = () => {
               <MapPin className="w-8 h-8 text-primary mx-auto mb-4" />
               <h4 className="font-semibold text-foreground mb-2">Localização</h4>
               <p className="text-sm text-muted-foreground">
-                Atendimento local no seu bairro
+                Dois Unidos, Recife - PE
                 <br />
-                e em toda Grande São Paulo
+                Atendimento em toda região
               </p>
             </CardContent>
           </Card>

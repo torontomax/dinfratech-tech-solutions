@@ -38,13 +38,28 @@ const Footer = () => {
               para impulsionar o crescimento do seu negócio.
             </p>
             <div className="flex space-x-3">
-              <Button variant="outline" size="icon" className="border-primary/20 hover:border-primary/50">
+              <Button 
+                variant="outline" 
+                size="icon" 
+                className="border-primary/20 hover:border-primary/50"
+                onClick={() => window.open('https://www.facebook.com/share/1Bx9Rj5Sxa/', '_blank')}
+              >
                 <Facebook className="w-4 h-4" />
               </Button>
-              <Button variant="outline" size="icon" className="border-primary/20 hover:border-primary/50">
+              <Button 
+                variant="outline" 
+                size="icon" 
+                className="border-primary/20 hover:border-primary/50"
+                onClick={() => window.open('https://www.instagram.com/dinfratech', '_blank')}
+              >
                 <Instagram className="w-4 h-4" />
               </Button>
-              <Button variant="outline" size="icon" className="border-primary/20 hover:border-primary/50">
+              <Button 
+                variant="outline" 
+                size="icon" 
+                className="border-primary/20 hover:border-primary/50"
+                onClick={() => window.open('https://www.linkedin.com/company/dinfratech/', '_blank')}
+              >
                 <Linkedin className="w-4 h-4" />
               </Button>
             </div>
@@ -80,32 +95,33 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold text-foreground mb-4">Contato</h4>
             <div className="space-y-3">
-              <div className="flex items-start space-x-3">
-                <Phone className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                <div>
-                  <p className="text-muted-foreground">(11) 9 9999-9999</p>
-                  <p className="text-xs text-muted-foreground">Segunda a Sexta: 8h às 18h</p>
-                </div>
-              </div>
-              <div className="flex items-start space-x-3">
+              <a 
+                href="https://wa.me/5581985290635" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-start space-x-3 hover:text-primary transition-colors"
+              >
                 <MessageCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="text-muted-foreground">WhatsApp</p>
-                  <p className="text-xs text-muted-foreground">Atendimento 24/7</p>
+                  <p className="text-muted-foreground">(81) 98529-0635</p>
+                  <p className="text-xs text-muted-foreground">WhatsApp - Atendimento 24/7</p>
                 </div>
-              </div>
-              <div className="flex items-start space-x-3">
+              </a>
+              <a 
+                href="mailto:diego.soares@dinfratech.com.br"
+                className="flex items-start space-x-3 hover:text-primary transition-colors"
+              >
                 <Mail className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="text-muted-foreground">contato@dinfratech.com.br</p>
+                  <p className="text-muted-foreground">diego.soares@dinfratech.com.br</p>
                   <p className="text-xs text-muted-foreground">Resposta em até 2h</p>
                 </div>
-              </div>
+              </a>
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="text-muted-foreground">Grande São Paulo</p>
-                  <p className="text-xs text-muted-foreground">Atendemos seu bairro e região</p>
+                  <p className="text-muted-foreground">Dois Unidos, Recife - PE</p>
+                  <p className="text-xs text-muted-foreground">Atendemos toda a região</p>
                 </div>
               </div>
             </div>
