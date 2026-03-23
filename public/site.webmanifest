@@ -1,0 +1,15 @@
+{
+  "name": "Dinfratech",
+  "short_name": "Dinfratech",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#06111b",
+  "theme_color": "#06111b",
+  "icons": [
+    {
+      "src": "/logo-512.webp",
+      "sizes": "512x512",
+      "type": "image/webp"
+    }
+  ]
+}
